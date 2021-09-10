@@ -5,11 +5,11 @@
                  box-sizing: border-box;
                  text-decoration: none;
              }
-             
+             /*              
              body {
-                 /* font-family: 'Ubuntu', sans-serif; */
-                 /* font-family: 'Poppins', sans-serif; */
-             }
+                 font-family: 'Ubuntu', sans-serif;
+                 font-family: 'Poppins', sans-serif;
+             } */
              /* navbar styling */
              
              .max-width {
@@ -535,6 +535,67 @@
              
              .skills .skills-content .right .uiux::before {
                  width: 75%;
+             }
+             /* <!-- Projects Section Starts --> */
+             
+             .projects {
+                 background-color: #111;
+                 font-family: 'Poppins', sans-serif;
+                 color: #fff;
+             }
+             
+             .projects .title {
+                 font-family: 'Ubuntu', sans-serif;
+                 text-align: center;
+                 font-size: 40px;
+                 font-weight: 500;
+                 margin-bottom: 60px;
+                 padding-bottom: 20px;
+                 position: relative;
+             }
+             
+             .projects .title::before {
+                 content: "";
+                 position: absolute;
+                 width: 220px;
+                 height: 3px;
+                 background: #fff;
+                 bottom: 0px;
+                 left: 50%;
+                 transform: translateX(-50%);
+             }
+             
+             .projects .title::after {
+                 content: "What I Created";
+                 position: absolute;
+                 /* width: 185px; */
+                 /* height: 3px; */
+                 font-size: 20px;
+                 color: crimson;
+                 background: #111;
+                 bottom: -13px;
+                 left: 50%;
+                 padding: 5px;
+                 transform: translateX(-50%);
+             }
+             
+             .projects .projects-content {
+                 display: flex;
+                 flex-wrap: wrap;
+                 align-items: center;
+                 justify-content: space-between;
+             }
+             
+             .projects .projects-content iframe {
+                 width: calc(33% - 10px);
+                 /* max-height: 600px; */
+                 background-color: #fff;
+                 border: 2px solid crimson;
+                 /* text-align: center; */
+                 /* border-radius: 6px; */
+                 /* padding: 20px 25px; */
+                 cursor: pointer;
+                 transition: all 0.3s ease-in-out;
              }
              /* responsible media query start */
              
