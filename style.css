@@ -4,6 +4,7 @@
                  padding: 0;
                  box-sizing: border-box;
                  text-decoration: none;
+                 user-select: none;
              }
              /*              
              body {
@@ -122,6 +123,7 @@
                  -webkit-text-fill-color: transparent;
                  animation: progress-animation 2s linear infinite;
                  background-size: 300% 100%;
+                 user-select: none;
              }
              
              .home .home-content .text-3 {
@@ -233,6 +235,7 @@
              
              .about .about-content .right p {
                  text-align: justify;
+                 user-select: none;
              }
              
              .about .about-content .right a {
@@ -545,6 +548,14 @@
              .skills .skills-content .right .uiux::before {
                  width: 75%;
              }
+             
+             .skills .skills-content .right .msoffice::before {
+                 width: 45%;
+             }
+             
+             .skills .skills-content .right .videoediting::before {
+                 width: 50%;
+             }
              /* <!-- Projects Section Starts --> */
              
              .projects {
@@ -613,6 +624,129 @@
                  /* padding: 20px 25px; */
                  cursor: pointer;
                  transition: all 0.3s ease-in-out;
+             }
+             /* undergraduate Project Sections */
+             
+             .undergraduate {
+                 /* background-color: #111; */
+                 font-family: 'Poppins', sans-serif;
+                 color: #fff;
+             }
+             
+             .undergraduate {
+                 /* background-color: #111; */
+                 font-family: 'Poppins', sans-serif;
+                 color: #fff;
+             }
+             
+             .undergraduate .title {
+                 color: #111;
+                 font-family: 'Ubuntu', sans-serif;
+                 text-align: center;
+                 font-size: 40px;
+                 font-weight: 500;
+                 margin-bottom: 60px;
+                 padding-bottom: 20px;
+                 position: relative;
+             }
+             
+             .undergraduate .title::before {
+                 content: "";
+                 position: absolute;
+                 width: 220px;
+                 height: 3px;
+                 background: #111;
+                 bottom: 0px;
+                 left: 50%;
+                 transform: translateX(-50%);
+             }
+             
+             .undergraduate .title::after {
+                 content: "What I Provide";
+                 position: absolute;
+                 font-size: 20px;
+                 color: crimson;
+                 background: #fff;
+                 bottom: -13px;
+                 left: 50%;
+                 padding: 5px;
+                 transform: translateX(-50%);
+             }
+             
+             .undergraduate .undergraduate-content {
+                 display: flex;
+                 flex-wrap: wrap;
+                 align-items: center;
+                 justify-content: space-between;
+             }
+             
+             .undergraduate .undergraduate-content .card a {
+                 text-decoration: none;
+                 color: #fff;
+             }
+             
+             .undergraduate .undergraduate-content .card {
+                 width: calc(33% - 20px);
+                 background-color: #222;
+                 text-align: center;
+                 border-radius: 6px;
+                 padding: 20px 25px;
+                 cursor: pointer;
+                 transition: all 0.3s ease-in-out;
+                 margin-bottom: 20px;
+                 position: relative;
+             }
+             
+             .undergraduate .undergraduate-content .card .box .contentdiv {
+                 z-index: -2;
+             }
+             
+             .undergraduate .undergraduate-content .card .java {
+                 position: absolute;
+                 font-size: 250px;
+                 right: 0;
+                 bottom: 0;
+                 z-index: 1;
+                 color: rgba(255, 255, 255, .05);
+             }
+             
+             .undergraduate .undergraduate-content .card:hover .java {
+                 color: rgba(0, 0, 0, .09);
+             }
+             
+             .undergraduate .undergraduate-content .card .box {
+                 padding-top: 20px;
+                 padding-bottom: 20px;
+                 transition: all 0.3s ease-in-out;
+                 /* z-index: 3; */
+             }
+             
+             .undergraduate .undergraduate-content .card:hover {
+                 background-color: crimson;
+             }
+             
+             .undergraduate .undergraduate-content .card:hover .box {
+                 transform: scale(1.05);
+             }
+             
+             .undergraduate .undergraduate-content .card i {
+                 color: crimson;
+                 font-size: 50px;
+                 transition: color 0.3s ease-in-out;
+             }
+             
+             .undergraduate .undergraduate-content .card:hover .contentdiv i {
+                 color: #fff;
+             }
+             
+             .undergraduate .undergraduate-content .card .text {
+                 font-size: 20px;
+                 font-weight: 500;
+                 margin: 10px 0 7px 0;
+             }
+             
+             .undergraduate .undergraduate-content .card p {
+                 font-size: 14px;
              }
              /* responsible media query start */
              
@@ -729,6 +863,9 @@
                      width: calc(30% - 20px);
                      margin-bottom: 20px;
                  }
+                 .undergraduate .undergraduate-content .card {
+                     width: calc(50% - 20px);
+                 }
              }
              
              @media (max-width: 690px) {
@@ -758,6 +895,9 @@
                  }
                  .projects .projects-content {
                      justify-content: center;
+                 }
+                 .undergraduate .undergraduate-content .card {
+                     width: 100%;
                  }
              }
              
