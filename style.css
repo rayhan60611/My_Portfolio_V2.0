@@ -206,7 +206,7 @@
                  height: 400px;
                  object-fit: cover;
                  border-radius: 4px;
-                 /* border: 6px solid crimson; */
+                 border: 6px solid crimson;
              }
              /* .about .about-content .left img::before {
                  content: "";
