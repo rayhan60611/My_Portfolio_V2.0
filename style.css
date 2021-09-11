@@ -6,11 +6,35 @@
                          text-decoration: none;
                          user-select: none;
                      }
+                     /* scroll bar code  */
+                     
+                      ::-webkit-scrollbar {
+                         width: 10px;
+                         height: 10px;
+                     }
+                     /* Track */
+                     
+                      ::-webkit-scrollbar-track {
+                         box-shadow: inset 0 0 5px gray;
+                         border-radius: 10px;
+                     }
+                     /* Handle */
+                     
+                      ::-webkit-scrollbar-thumb {
+                         border-radius: 10px;
+                         background: crimson;
+                     }
+                     /* Handle on hover */
+                     
+                      ::-webkit-scrollbar-thumb:hover {
+                         background: linear-gradient(180deg, #ff3d87, crimson 17%, rgb(100, 14, 238) 34%, #01feff 51%, #ffd33d 68%, crimson 85%, red);
+                     }
                      /*              
-             body {
-                 font-family: 'Ubuntu', sans-serif;
-                 font-family: 'Poppins', sans-serif;
-             } */
+                     body {
+                         font-family: 'Ubuntu', sans-serif;
+                         font-family: 'Poppins', sans-serif;
+                     }
+                     */
                      /* navbar styling */
                      
                      .max-width {
@@ -786,7 +810,10 @@
                      .undergraduate .final-content .final-content-inner iframe {
                          width: 100%;
                          height: 500px;
-                         border: 5px solid crimson;
+                         padding: 5px;
+                         background: linear-gradient(90deg, #ffd33d, crimson 17%, rgb(233, 4, 80) 34%, #01feff 51%, #ffd33d 68%, crimson 85%, red);
+                         animation: progress-animation 3s linear infinite;
+                         background-size: 300% 100%;
                      }
                      /* <!-- Research & Publications Section Starts --> */
                      
@@ -879,6 +906,89 @@
                      .research .research-content .publication a:hover {
                          background-color: #fff;
                          color: crimson;
+                     }
+                     /* teams section starts */
+                     
+                     .teams {
+                         /* background-color: #111; */
+                         font-family: 'Poppins', sans-serif;
+                         color: #fff;
+                     }
+                     
+                     .teams .title {
+                         color: #111;
+                         font-family: 'Ubuntu', sans-serif;
+                         text-align: center;
+                         font-size: 40px;
+                         font-weight: 500;
+                         margin-bottom: 60px;
+                         padding-bottom: 20px;
+                         position: relative;
+                     }
+                     
+                     .teams .title::before {
+                         content: "";
+                         position: absolute;
+                         width: 180px;
+                         height: 3px;
+                         background: #111;
+                         bottom: 0px;
+                         left: 50%;
+                         transform: translateX(-50%);
+                     }
+                     
+                     .teams .title::after {
+                         content: "Who with me";
+                         position: absolute;
+                         font-size: 20px;
+                         color: crimson;
+                         background: #fff;
+                         bottom: -13px;
+                         left: 50%;
+                         padding: 5px;
+                         transform: translateX(-50%);
+                     }
+                     
+                     .teams .carousel .card {
+                         background: #222;
+                         border-radius: 6px;
+                         padding: 25px 35px;
+                         text-align: center;
+                         transition: all 0.3s ease-in-out;
+                     }
+                     
+                     .teams .carousel .card:hover {
+                         background: crimson;
+                     }
+                     
+                     .teams .carousel .card .text {
+                         font-size: 25px;
+                         font-weight: 500;
+                         margin: 10px 0 7px 0;
+                     }
+                     
+                     .teams .carousel .card img {
+                         height: 150px;
+                         width: 150px;
+                         object-fit: cover;
+                         border-radius: 50%;
+                         border: 5px solid crimson;
+                     }
+                     
+                     .teams .carousel .card:hover img {
+                         border-color: #fff;
+                     }
+                     
+                     .teams .carousel .card .box {
+                         display: flex;
+                         flex-direction: column;
+                         align-items: center;
+                         justify-content: center;
+                         transition: all 0.3s ease-in-out;
+                     }
+                     
+                     .teams .carousel .card:hover .box {
+                         transform: scale(1.05);
                      }
                      /* responsible media query start */
                      
