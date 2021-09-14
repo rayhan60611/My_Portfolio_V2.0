@@ -7,12 +7,17 @@ $(document).ready(function() {
             $('.navbar').removeClass("sticky");
         }
 
-        // scroll-up button show/hide script
-        // if (this.scrollY > 500) {
-        //     $('.scroll-up-btn').addClass("show");
-        // } else {
-        //     $('.scroll-up-btn').removeClass("show");
-        // }
+        // scroll - up button show / hide script
+        if (this.scrollY > 500) {
+            $('.scroll-up-button').addClass("show");
+        } else {
+            $('.scroll-up-button').removeClass("show");
+        }
+    });
+
+    // scroll up script
+    $('scroll-up-button').click(function() {
+        $('html').animate({ scrollTop: 0 });
     });
 
 
