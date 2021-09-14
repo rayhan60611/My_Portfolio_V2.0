@@ -1213,6 +1213,7 @@
      top: 50%;
      transform: translate(-50%, -50%);
      width: 100%;
+     transition: all 0.3s ease-in-out;
  }
  
  .contact .right form .name {
@@ -1334,6 +1335,7 @@
      display: flex;
      justify-content: center;
      align-items: center;
+     flex-wrap: wrap;
  }
  
  .footer-last-bar p {
@@ -1346,6 +1348,7 @@
  .footer-last-bar p span {
      color: #fff;
  }
+ /* scroll-up-btn */
  /* responsible media query start */
  
  @media (max-width: 1300px) {
@@ -1517,6 +1520,9 @@
          width: 100%;
          margin-top: 60px;
      }
+     .footer-last-bar p {
+         font-size: 15px;
+     }
  }
  
  @media (max-width: 500px) {
@@ -1541,5 +1547,8 @@
      }
      .research .title::before {
          width: 350px;
+     }
+     .footer-last-bar p {
+         font-size: 12px;
      }
  }
