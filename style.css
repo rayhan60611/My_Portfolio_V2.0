@@ -37,6 +37,10 @@
                      */
  /* navbar styling */
  
+ html {
+     scroll-behavior: smooth;
+ }
+ 
  .max-width {
      max-width: 1300px;
      padding: 0 80px;
@@ -1355,7 +1359,7 @@
      height: 45px;
      width: 42px;
      background-color: crimson;
-     right: 30px;
+     right: 25px;
      bottom: 10px;
      text-align: center;
      line-height: 45px;
