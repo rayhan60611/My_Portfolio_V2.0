@@ -167,19 +167,43 @@
  
  .home .home-content a {
      display: inline-block;
-     background-color: crimson;
+     position: relative;
+     background-color: transparent;
      color: #fff;
-     font-size: 25px;
-     padding: 12px 36px;
+     padding: 26px 83px;
      margin-top: 20px;
      border-radius: 6px;
      border: 2px solid crimson;
      transition: all 0.3s ease-in-out;
+     overflow: hidden;
  }
  
- .home .home-content a:hover {
+ .home .home-content a::before {
+     content: "";
      color: crimson;
      background: none;
+     background-color: crimson;
+     position: absolute;
+     height: 120%;
+     width: 0;
+     z-index: 1;
+     transition: all 0.3s ease-in-out;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%) skewX(-45deg);
+ }
+ 
+ .home .home-content a:hover::before {
+     width: 300px;
+ }
+ 
+ .home .home-content a span {
+     position: absolute;
+     z-index: 2;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 23px;
  }
  /* <!-- about section start -- */
  
@@ -1479,8 +1503,10 @@
          font-size: 35px;
      }
      .home .home-content a {
+         padding: 26px 83px;
+     }
+     .home .home-content a span {
          font-size: 23px;
-         padding: 10px 30px;
      }
      .max-width {
          max-width: 800px;
@@ -1532,8 +1558,10 @@
          font-size: 32px;
      }
      .home .home-content a {
-         font-size: 20px;
-         padding: 9px 25px;
+         padding: 22px 62px;
+     }
+     .home .home-content a span {
+         font-size: 17px;
      }
      .services .services-content .card {
          width: 100%;
@@ -1572,7 +1600,7 @@
  
  @media (max-width: 500px) {
      .home .home-content .text-2 {
-         font-size: 50px;
+         font-size: 45px;
      }
      .home .home-content .text-3 {
          font-size: 27px;
