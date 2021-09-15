@@ -103,6 +103,7 @@
  }
  
  .navbar .menu li a {
+     display: block;
      color: #fff;
      font-size: 18px;
      font-weight: 500;
@@ -1439,6 +1440,9 @@
      }
      .menu-btn i.active::before {
          content: "\f00d";
+         color: crimson;
+         transition: all 0.3s ease-in-out;
+         font-size: 40px;
      }
      .max-width {
          padding: 0 50px;

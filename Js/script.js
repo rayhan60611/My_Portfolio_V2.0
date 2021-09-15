@@ -31,6 +31,22 @@ $(document).ready(function() {
     });
 
 
+    ///////// Typing ANIMATION SCRIPT//////////////
+    var typed = new Typed(".typing", {
+        strings: ["Web Developer", "Creative Designer", "UI/UX Designer", "Freelancer", "Content Creator"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    var typed = new Typed(".typing-2", {
+        strings: ["Web Developer", "Creative Designer", "UI/UX Designer", "Freelancer", "Content Creator"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+
 
     /////////////// owl carosel scripts////////////////
 
