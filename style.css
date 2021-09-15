@@ -1016,6 +1016,26 @@
      transition: all 0.3s ease-in-out;
  }
  
+ .teams .carousel .card .box .social-div {
+     display: inline-block;
+ }
+ 
+ .teams .carousel .card .box .social-div a {
+     text-decoration: none;
+     color: #fff;
+     font-size: 25px;
+     transition: all 0.3s ease-in-out;
+ }
+ 
+ .teams .carousel .card .box .social-div i:hover {
+     transition: all 0.3s ease-in-out;
+ }
+ 
+ .teams .carousel .card .box .social-div i:hover {
+     transform: rotate(360deg) scale(1.2);
+     color: #fff;
+ }
+ 
  .teams .carousel .card:hover .box {
      transform: scale(1.05);
  }
